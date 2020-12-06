@@ -1,0 +1,9 @@
+*{
+  font-family: "Fira Code"!important;
+}
+
+@font-face {
+  font-family: 'Fira Code';
+  font-style: normal;
+  src: local('Fira Code'), url('maize/FiraCode-Regular.ttf') format('ttf');
+}
