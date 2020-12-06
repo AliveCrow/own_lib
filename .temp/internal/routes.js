@@ -21,6 +21,174 @@ export const routes = [
     redirect: "/"
   },
   {
+    name: "v-47f7b87e",
+    path: "/interview/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-47f7b87e").then(next)
+    },
+  },
+  {
+    path: "/interview/index.html",
+    redirect: "/interview/"
+  },
+  {
+    name: "v-2e0f8a99",
+    path: "/notes/CSS/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2e0f8a99").then(next)
+    },
+  },
+  {
+    path: "/notes/CSS/index.html",
+    redirect: "/notes/CSS/"
+  },
+  {
+    name: "v-2ca8c435",
+    path: "/notes/HTML/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2ca8c435").then(next)
+    },
+  },
+  {
+    path: "/notes/HTML/index.html",
+    redirect: "/notes/HTML/"
+  },
+  {
+    name: "v-8f97f716",
+    path: "/notes/JavaScript/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-8f97f716").then(next)
+    },
+  },
+  {
+    path: "/notes/JavaScript/index.html",
+    redirect: "/notes/JavaScript/"
+  },
+  {
+    name: "v-0c35cfd5",
+    path: "/notes/Node/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-0c35cfd5").then(next)
+    },
+  },
+  {
+    path: "/notes/Node/index.html",
+    redirect: "/notes/Node/"
+  },
+  {
+    name: "v-69b8a941",
+    path: "/notes/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-69b8a941").then(next)
+    },
+  },
+  {
+    path: "/notes/index.html",
+    redirect: "/notes/"
+  },
+  {
+    name: "v-3233c3d3",
+    path: "/notes/Vue/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-3233c3d3").then(next)
+    },
+  },
+  {
+    path: "/notes/Vue/index.html",
+    redirect: "/notes/Vue/"
+  },
+  {
+    name: "v-d47bb776",
+    path: "/notes/Webpack/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-d47bb776").then(next)
+    },
+  },
+  {
+    path: "/notes/Webpack/index.html",
+    redirect: "/notes/Webpack/"
+  },
+  {
+    name: "v-d59cdf56",
+    path: "/snippets/CSS/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-d59cdf56").then(next)
+    },
+  },
+  {
+    path: "/snippets/CSS/index.html",
+    redirect: "/snippets/CSS/"
+  },
+  {
+    name: "v-ed686b8a",
+    path: "/snippets/HTML/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-ed686b8a").then(next)
+    },
+  },
+  {
+    path: "/snippets/HTML/index.html",
+    redirect: "/snippets/HTML/"
+  },
+  {
+    name: "v-429869f7",
+    path: "/snippets/JavaScript/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-429869f7").then(next)
+    },
+  },
+  {
+    path: "/snippets/JavaScript/index.html",
+    redirect: "/snippets/JavaScript/"
+  },
+  {
+    name: "v-3c19b80d",
+    path: "/snippets/Node/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-3c19b80d").then(next)
+    },
+  },
+  {
+    path: "/snippets/Node/index.html",
+    redirect: "/snippets/Node/"
+  },
+  {
+    name: "v-608167b5",
+    path: "/snippets/Vue/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-608167b5").then(next)
+    },
+  },
+  {
+    path: "/snippets/Vue/index.html",
+    redirect: "/snippets/Vue/"
+  },
+  {
+    name: "v-e34c68d6",
+    path: "/snippets/WeChatApp/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-e34c68d6").then(next)
+    },
+  },
+  {
+    path: "/snippets/WeChatApp/index.html",
+    redirect: "/snippets/WeChatApp/"
+  },
+  {
     path: '*',
     component: GlobalLayout
   }

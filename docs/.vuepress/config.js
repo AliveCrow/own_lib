@@ -1,6 +1,5 @@
 module.exports = {
-  title: '不甘当下',
-  description: "Vue,Vuepress",
+  title: 'AliveRow',
   theme: 'antdocs',
   base: '/lib/',
   //添加到header里面的内容
@@ -21,48 +20,96 @@ module.exports = {
     //导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '前端学习笔记', link: '/guide/' },
+      { text: '前端学习笔记', link: '/notes/' },
+      { text: '面试相关', link: '/interview/' },
       {
-        text: '代码片段', ariaLabel: 'Snippets',
+        text: 'Snippets', ariaLabel: 'Snippets',
         items: [
-          { text: 'Chinese', link: '/language/chinese/' },
-          { text: 'Japanese', link: '/language/japanese/' }
+          { text: 'HTML', link: '/snippets/HTML/' },
+          { text: 'CSS', link: '/snippets/CSS/' },
+          { text: 'JavaScript', link: '/snippets/JavaScript/' },
+          { text: 'Vue', link: '/snippets/Vue/' },
+          { text: 'Node', link: '/snippets/Node/' },
+          { text: 'WeChatApp', link: '/snippets/WeChatApp/' },
         ]
       },
-      { text: '面试相关', link: 'https://goo11gle.com' },
-      { text: '个人博客', link: 'https://google.com' },
+      { text: '个人项目',
+        items:[
+          {text:'AliveMusic',link:'http://alivemusic.dreamsakula.top/'},
+          {text:'AliveNote',link:'http://alivenote.dreamsakula.top/'},
+          {text:'GritUI',link:'http://aliveui.dreamsakula.top/#/'},
+        ]
+      },
+      { text: '其他',
+        items:[
+          {text:'GitHub',link:'https://github.com/AliveCrow'},
+          {text:'博客',link:'https://dreamsakula.top/'},
+          {text:'TODO',link:'/todo/'}
+        ]
+      },
     ],
-    sidebarDepth: 1, // 为2 则将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
-    sidebar: [
-      {
-        title: 'Group 1',   // 必要的
-        path: '/foo/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
-        collapsable: false, // 可选的, 默认值是 true,
-        sidebarDepth: 1,    // 可选的, 默认值是 1
-        children: [
-          '/'
-        ]
-      },
-      {
-        title: 'Group 2',
-        children: [ /* ... */],
-        initialOpenGroupIndex: -1 // 可选的, 默认值是 0
-      }
-    ]
+    sidebarDepth: 3, // 为2 则将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
+    sidebar:{
+      // 面试
+      '/notes/': [
+        '/notes/',
+        {
+          title:'HTML',
+          path: '/notes/HTML/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+          // collapsable: false, // 可选的, 默认值是 true,
+          // sidebarDepth: 3,    // 可选的, 默认值是 1
+        },
+        {
+          title:'CSS',
+          path: '/notes/CSS/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+
+        },
+        {
+          title:'JavaScript',
+          path: '/notes/JavaScript/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+
+        },
+        {
+          title:'Vue',
+          path: '/notes/Vue/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+
+        },
+        {
+          title:'Webpack',
+          path: '/notes/Webpack/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+
+        },
+        {
+          title:'Node',
+          path: '/notes/Node/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
+        },
+      ],
+      '/interview/':[
+          '/interview/',
+      ],
+      '/snippets/HTML/':[
+          '/snippets/HTML/'
+      ],
+      '/snippets/CSS/':[
+        '/snippets/CSS/'
+      ],
+      '/snippets/JavaScript/':[
+        '/snippets/JavaScript/'
+      ],
+      '/snippets/Vue/':[
+        '/snippets/Vue/'
+      ],
+      '/snippets/Node/':[
+        '/snippets/Node/'
+      ],
+      '/snippets/WeChatApp/':[
+        '/snippets/WeChatApp/'
+      ],
+    }
   },
   plugins: [
-    ['homebadge', {
-      selector: '.hero',
-      repoLink: 'https://github.com/zpfz/vuepress-theme-antdocs',
-      badgeLink: 'https://img.shields.io/github/stars/zpfz/vuepress-theme-antdocs?style=social',
-      badgeGroup: [
-        'https://img.shields.io/badge/build-passing-brightgreen?style=flat-square',
-        'https://img.shields.io/npm/dt/vuepress-theme-antdocs?style=flat-square&color=red',
-        'https://img.shields.io/github/license/zpfz/vuepress-theme-antdocs?style=flat-square&color=blue',
-        'https://img.shields.io/npm/v/vuepress-theme-antdocs?style=flat-square'
-      ]
-    }],
     // 页面滚动时自动激活侧边栏链接的插件
-    ['@vuepress/active-header-links']
-  ],
+    ['@vuepress/active-header-links'],
+    ['@vuepress/back-to-top'],
+],
 }
