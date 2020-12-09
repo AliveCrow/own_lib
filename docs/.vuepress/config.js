@@ -21,6 +21,7 @@ module.exports = {
     nav: [
       { text: '首页', link: '/' },
       { text: '前端学习笔记', link: '/notes/' },
+      { text: '每日整理', link: '/daysort/' },
       { text: '面试相关', link: '/interview/' },
       {
         text: 'Snippets', ariaLabel: 'Snippets',
@@ -33,76 +34,81 @@ module.exports = {
           { text: 'WeChatApp', link: '/snippets/WeChatApp/' },
         ]
       },
-      { text: '个人项目',
-        items:[
-          {text:'AliveMusic',link:'http://alivemusic.dreamsakula.top/'},
-          {text:'AliveNote',link:'http://alivenote.dreamsakula.top/'},
-          {text:'GritUI',link:'http://aliveui.dreamsakula.top/#/'},
+      {
+        text: '个人项目',
+        items: [
+          { text: 'AliveMusic', link: 'http://alivemusic.dreamsakula.top/' },
+          { text: 'AliveNote', link: 'http://alivenote.dreamsakula.top/' },
+          { text: 'GritUI', link: 'http://aliveui.dreamsakula.top/#/' },
         ]
       },
-      { text: '其他',
-        items:[
-          {text:'GitHub',link:'https://github.com/AliveCrow'},
-          {text:'博客',link:'https://dreamsakula.top/'},
-          {text:'TODO',link:'/todo/'}
+      {
+        text: '其他',
+        items: [
+          { text: 'GitHub', link: 'https://github.com/AliveCrow' },
+          { text: '博客', link: 'https://dreamsakula.top/' },
+          { text: 'TODO', link: '/todo/' }
         ]
       },
     ],
     sidebarDepth: 3, // 为2 则将同时提取markdown中h2 和 h3 标题，显示在侧边栏上。
-    sidebar:{
+    sidebar: {
       // 面试
       '/notes/': [
         '/notes/',
         {
-          title:'HTML',
+          title: 'HTML',
           path: '/notes/HTML/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
           // collapsable: false, // 可选的, 默认值是 true,
           // sidebarDepth: 3,    // 可选的, 默认值是 1
         },
         {
-          title:'CSS',
+          title: 'CSS',
           path: '/notes/CSS/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
 
         },
         {
-          title:'JavaScript',
+          title: 'JavaScript',
           path: '/notes/JavaScript/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
 
         },
         {
-          title:'Vue',
+          title: 'Vue',
           path: '/notes/Vue/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
 
         },
         {
-          title:'Webpack',
+          title: 'Webpack',
           path: '/notes/Webpack/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
 
         },
         {
-          title:'Node',
+          title: 'Node',
           path: '/notes/Node/',      // 可选的, 标题的跳转链接，应为绝对路径且必须存在
         },
       ],
-      '/interview/':[
-          '/interview/',
+      '/daysort/': [
+        '/daysort/'
       ],
-      '/snippets/HTML/':[
-          '/snippets/HTML/'
+      '/interview/': [
+        '/interview/',
       ],
-      '/snippets/CSS/':[
+      '/snippets/HTML/': [
+        '/snippets/HTML/'
+      ],
+      '/snippets/CSS/': [
         '/snippets/CSS/'
       ],
-      '/snippets/JavaScript/':[
+      '/snippets/JavaScript/': [
         '/snippets/JavaScript/'
       ],
-      '/snippets/Vue/':[
+      '/snippets/Vue/': [
         '/snippets/Vue/'
       ],
-      '/snippets/Node/':[
+      '/snippets/Node/': [
         '/snippets/Node/'
       ],
-      '/snippets/WeChatApp/':[
+      '/snippets/WeChatApp/': [
         '/snippets/WeChatApp/'
       ],
     }
@@ -111,5 +117,5 @@ module.exports = {
     // 页面滚动时自动激活侧边栏链接的插件
     ['@vuepress/active-header-links'],
     ['@vuepress/back-to-top'],
-],
+  ],
 }

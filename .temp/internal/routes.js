@@ -33,6 +33,18 @@ export const routes = [
     redirect: "/interview/"
   },
   {
+    name: "v-2cb6bacf",
+    path: "/daysort/",
+    component: GlobalLayout,
+    beforeEnter: (to, from, next) => {
+      ensureAsyncComponentsLoaded("Layout", "v-2cb6bacf").then(next)
+    },
+  },
+  {
+    path: "/daysort/index.html",
+    redirect: "/daysort/"
+  },
+  {
     name: "v-2e0f8a99",
     path: "/notes/CSS/",
     component: GlobalLayout,

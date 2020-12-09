@@ -29,7 +29,6 @@ export const siteData = {
         "heroImage": "/img/avatar.png",
         "heroText": "AliveRow",
         "tagline": "要一直学习,避免被淘汰",
-        "actionText": "ENTER=>",
         "actionLink": "/zh/guide/",
         "footer": "MIT Licensed | Copyright © 2018-present"
       },
@@ -44,7 +43,99 @@ export const siteData = {
       "regularPath": "/interview/",
       "relativePath": "interview/README.md",
       "key": "v-47f7b87e",
-      "path": "/interview/"
+      "path": "/interview/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "symbol是什么基本数据类型还是引用数类型",
+          "slug": "symbol是什么基本数据类型还是引用数类型"
+        },
+        {
+          "level": 2,
+          "title": "for in和for of的区别",
+          "slug": "for-in和for-of的区别"
+        },
+        {
+          "level": 2,
+          "title": "那些方法改变原数组,哪些不会改变原数组",
+          "slug": "那些方法改变原数组-哪些不会改变原数组"
+        },
+        {
+          "level": 2,
+          "title": "ES5和ES6的继承方式?",
+          "slug": "es5和es6的继承方式"
+        },
+        {
+          "level": 2,
+          "title": "super方法的作用",
+          "slug": "super方法的作用"
+        },
+        {
+          "level": 2,
+          "title": "TS的泛型",
+          "slug": "ts的泛型"
+        },
+        {
+          "level": 2,
+          "title": "TS私有属性和受保护的数据的属性关键字",
+          "slug": "ts私有属性和受保护的数据的属性关键字"
+        },
+        {
+          "level": 2,
+          "title": "Vue3和Vue2的区别",
+          "slug": "vue3和vue2的区别"
+        },
+        {
+          "level": 2,
+          "title": "Mixin的原理",
+          "slug": "mixin的原理"
+        },
+        {
+          "level": 2,
+          "title": "Es6",
+          "slug": "es6"
+        },
+        {
+          "level": 2,
+          "title": "keep-alive的两个生命周期",
+          "slug": "keep-alive的两个生命周期"
+        },
+        {
+          "level": 2,
+          "title": "轮播图组件思路",
+          "slug": "轮播图组件思路"
+        },
+        {
+          "level": 2,
+          "title": "webpack多页面",
+          "slug": "webpack多页面"
+        },
+        {
+          "level": 2,
+          "title": "将一个字符串反向",
+          "slug": "将一个字符串反向"
+        }
+      ]
+    },
+    {
+      "title": "每日整理",
+      "frontmatter": {},
+      "regularPath": "/daysort/",
+      "relativePath": "daysort/README.md",
+      "key": "v-2cb6bacf",
+      "path": "/daysort/",
+      "headers": [
+        {
+          "level": 2,
+          "title": "2020",
+          "slug": "_2020"
+        },
+        {
+          "level": 3,
+          "title": "10月",
+          "slug": "_10月"
+        }
+      ]
     },
     {
       "title": "HTML",
@@ -176,6 +267,10 @@ export const siteData = {
         "link": "/notes/"
       },
       {
+        "text": "每日整理",
+        "link": "/daysort/"
+      },
+      {
         "text": "面试相关",
         "link": "/interview/"
       },
@@ -272,6 +367,9 @@ export const siteData = {
           "title": "Node",
           "path": "/notes/Node/"
         }
+      ],
+      "/daysort/": [
+        "/daysort/"
       ],
       "/interview/": [
         "/interview/"
