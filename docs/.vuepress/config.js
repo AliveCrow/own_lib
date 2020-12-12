@@ -1,7 +1,7 @@
 module.exports = {
   title: 'AliveRow',
   theme: 'antdocs',
-  base: '/lib/',
+  base: '/own_lib/',
   //添加到header里面的内容
   head: [
     ['link', { rel: 'icon', href: '/img/avatar.png' }],
