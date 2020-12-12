@@ -1,7 +1,0 @@
-node_modules
-.idea/workspace.xml
-.temp/.DS_Store
-.temp/app-enhancers/global-components-71.js
-docs/.vuepress/public/js/
-docs/notes/.DS_Store
-docs/snippets/.DS_Store
